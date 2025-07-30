@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# Numbers App - Информация о числах
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Одностраничное React приложение для получения интересной информации о числах с использованием Numbers API.
 
-## Available Scripts
+## 🚀 Возможности
 
-In the project directory, you can run:
+- **Выбор типа информации**: Math (математические факты), Trivia (интересные факты), Date (факты о датах)
+- **Гибкий ввод чисел**: Пользователь может ввести конкретное число или выбрать случайное число
+- **Валидация данных**: Проверка корректности введенных данных с понятными сообщениями об ошибках
+- **Современный дизайн**: Красивый и отзывчивый интерфейс с градиентами и анимациями
+- **Обработка ошибок**: Понятные сообщения об ошибках при проблемах с API или некорректном вводе
+- **Детальная информация**: Отображение как введенных пользователем данных, так и полученной информации о числе
 
-### `npm start`
+## 🛠 Технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React 18** с TypeScript
+- **Axios** для HTTP запросов
+- **CSS3** с современными возможностями (Grid, Flexbox, Animations)
+- **Numbers API** (http://numbersapi.com)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📦 Установка и запуск
 
-### `npm test`
+1. **Клонируйте репозиторий**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone <repository-url>
+   cd numbersapp
+   ```
 
-### `npm run build`
+2. **Установите зависимости**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Запустите приложение**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+4. **Откройте браузер** и перейдите по адресу `http://localhost:3000`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🎯 Как использовать
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Выберите тип информации**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   - **Trivia**: Интересные факты о числе
+   - **Math**: Математические факты о числе
+   - **Date**: Факты о датах
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. **Введите число или выберите случайное**:
 
-## Learn More
+   - Введите конкретное число в поле ввода
+   - Или отметьте галочку "Случайное число"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Нажмите "Получить информацию"**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Просмотрите результат** на новой странице с детальной информацией
+
+## 📱 Особенности интерфейса
+
+- **Адаптивный дизайн**: Работает на всех устройствах
+- **Плавные анимации**: Переходы между страницами и интерактивные элементы
+- **Интуитивная навигация**: Понятные кнопки и четкая структура
+- **Обратная связь**: Визуальные индикаторы загрузки и состояния
+
+## 🔧 Структура проекта
+
+```
+src/
+├── components/
+│   ├── NumberForm.tsx      # Форма ввода данных
+│   ├── NumberForm.css      # Стили формы
+│   ├── NumberResult.tsx    # Страница результатов
+│   └── NumberResult.css    # Стили результатов
+├── services/
+│   └── api.ts             # API сервис для работы с Numbers API
+├── types/
+│   └── index.ts           # TypeScript типы
+├── App.tsx                # Главный компонент приложения
+└── index.tsx              # Точка входа
+```
+
+## 🎨 Дизайн
+
+Приложение использует современный дизайн с:
+
+- Градиентными фонами
+- Карточным интерфейсом
+- Тенями и размытием
+- Анимациями и переходами
+- Отзывчивой типографикой
+
+## 🚨 Обработка ошибок
+
+Приложение обрабатывает следующие типы ошибок:
+
+- Некорректный ввод числа
+- Проблемы с сетевым соединением
+- Ошибки API
+- Пустые поля формы
+
+## 📄 Лицензия
+
+Этот проект создан в рамках тестового задания.
+
+---
+
+**Удачи в выполнении! Надеемся увидеть вас в нашей команде! 🎉**
